@@ -8,12 +8,12 @@ inputEl.value = "";
 
 
 convertBtn.addEventListener("click", function(){
-    const metersToFeet = inputEl.value * 3.28084;
-    const feetToMeters = inputEl.value / 3.28084;
-    const litersToGallons = inputEl.value / 3.785;
-    const gallonsToLiters = inputEl.value * 3.785;
-    const kilogramsToPounds = inputEl.value * 2.205;
-    const poundsToKilograms = inputEl.value / 2.205;
+    const metersToFeet = Math.floor(inputEl.value * 3.28084);
+    const feetToMeters = Math.floor(inputEl.value / 3.28084);
+    const litersToGallons = Math.floor(inputEl.value / 3.785);
+    const gallonsToLiters = Math.floor(inputEl.value * 3.785);
+    const kilogramsToPounds = Math.floor(inputEl.value * 2.205);
+    const poundsToKilograms = Math.floor(inputEl.value / 2.205);
 
 
     convertedLength.textContent = `${inputEl.value} meters = ${metersToFeet} feet | ${inputEl.value} feet = ${feetToMeters} meters`
